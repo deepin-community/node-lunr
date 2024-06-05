@@ -5,13 +5,15 @@ Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.deb
 Uploaders:
  Jonas Smedegaard <dr@jones.dk>,
 Build-Depends:
+ brotli,
  node-chai (>= 4) <!nocheck>,
  debhelper-compat (= 13),
  mocha <!nocheck>,
  node-source-map,
- uglifyjs.terser,
+ uglifyjs (>=3),
  pandoc,
-Standards-Version: 4.5.1
+ pigz,
+Standards-Version: 4.6.1
 Homepage: https://lunrjs.com/
 Vcs-Git: https://salsa.debian.org/js-team/node-lunr.git
 Vcs-Browser: https://salsa.debian.org/js-team/node-lunr
@@ -45,6 +47,7 @@ Depends:
  libjs-lunr,
  nodejs:any,
  ${misc:Depends},
+Multi-Arch: foreign
 Description: simple full-text search - Node.js
  Lunr.js is a small, full-text search library for use in the browser.
  It indexes JSON documents and provides a simple search interface
