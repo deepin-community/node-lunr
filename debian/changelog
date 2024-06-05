@@ -1,3 +1,37 @@
+node-lunr (2.3.9~dfsg-2) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Sun, 04 Dec 2022 19:10:06 +0000
+
+node-lunr (2.3.9~dfsg-1) unstable; urgency=medium
+
+  [ upstream ]
+  * new release
+
+  [ Jonas Smedegaard ]
+  * uglify in temporary build directory
+  * pre-compress for browser use;
+    build-depend on brotli pigz
+  * update patch 2004
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 02 Dec 2021 04:09:46 +0100
+
+node-lunr (2.3.8~dfsg-5) unstable; urgency=medium
+
+  * fix filename of generated source-map; thanks to Xavier Guimard
+  * fix clean generated documentation; thanks to Xavier Guimard
+  * use and build-depend on recent uglifyjs
+    (not old deprecated node-uglify nor uglifyjs.terser)
+  * update copyright info:
+    + use Reference field (not License-Reference);
+      tighten lintian overrides
+    + update coverage
+  * declare compliance with Debian Policy 4.6.0
+
+ -- Jonas Smedegaard <dr@jones.dk>  Wed, 01 Dec 2021 23:44:06 +0100
+
 node-lunr (2.3.8~dfsg-4) unstable; urgency=medium
 
   * Team upload.
